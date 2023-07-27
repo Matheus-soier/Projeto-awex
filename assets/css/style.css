@@ -1,0 +1,253 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+  @import 'normalize.css';
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --font-text: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-text);
+    font-size: 13px;
+    overflow-x: hidden;
+  }
+
+  header {
+    background-color: black;
+    height: 100px;
+  }
+
+  .button {
+    margin-top: 25px;
+    font-weight: bold;
+    border-radius: 30px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    background-color: #B88A57;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 20px;
+  }
+
+  .head {
+    margin: auto;
+    max-width: 1140px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: end;
+  }
+
+  .menu ul,
+  .menu li {
+    list-style: none;
+  }
+
+  .menu ul {
+    display: flex;
+  }
+
+  .menu li a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid black;
+  }
+
+  .menu li a:hover {
+    border-bottom: 5px solid #B88A57;
+    color: rgba(255, 255, 255, 0.699);
+  }
+
+  /* main */
+
+  .banner {
+    height: calc(100vh - 100px);
+    background-color: rgb(49, 44, 44);
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+  }
+
+  .banner .sliders {
+    width: 1000vw;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .slider {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+  }
+
+  .banner .slider .slidearea {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .banner .slidearea h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .banner .slidearea h1 span {
+    color: #B88A57;
+  }
+
+  .banner .slidearea h2 {
+    text-transform: uppercase;
+  }
+
+  .banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner .pointer {
+    width: 15px;
+    margin: 0 5px;
+    height: 15px;
+    border: 2px solid #B88A57;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .banner .active {
+    background-color: #B88A57;
+  }
+
+  .default {
+    padding: 50px 0;
+  }
+
+  .default .section-title,
+  .default .section-desc {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .default .section-title {
+    font-size: 20px;
+  }
+
+  .default .section-desc {
+    color: #8d8d8d;
+    font-size: 12px;
+    margin: 13px 0 40px 0;
+  }
+
+  .default .section-body {
+    margin: auto;
+    max-width: 1140px;
+  }
+
+  .light {
+    background-color: #f7f7f7;
+  }
+
+  .light .section-title {
+    color: black;
+  }
+
+  .light .section-body {
+    color: black;
+  }
+
+  .dark {
+    background-color: black;
+  }
+
+  .dark .section-title {
+    color: #f7f7f7;
+  }
+
+  .dark .section-body {
+    color: #f7f7f7;
+  }
+
+  .section-aboutus {
+    display: flex;
+  }
+
+  .section-aboutus--left {
+    flex: 1;
+  }
+
+  .section-aboutus--left p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .section-aboutus--right {
+    width: 520px;
+    text-align: center;
+  }
+
+  .section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+  }
+
+  .section-services {
+    display: flex;
+  }
+
+  .section-service {
+    flex: 1;
+    text-align: center;
+  }
+
+  .section-service img {
+    width: 50px;
+  }
+
+  .section-service h4 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+
+  .section-service p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
