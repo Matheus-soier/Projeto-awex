@@ -1184,4 +1184,8 @@
     .section-premium-right p {
       width: 200px;
     }
+
+    .default .section-desc {
+      width: 250px;
+    }
   }
