@@ -1158,8 +1158,30 @@
     .banner .slidearea h1 {
       font-size: 30px;
     }
-    
+
     .final form {
+      width: 200px;
+    }
+
+    .sociais {
+      display: none;
+    }
+
+    .section-service {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section-service p {
+      width: 250px;
+    }
+
+    .section-premium-right {
+      justify-content: center;
+    }
+
+    .section-premium-right p {
       width: 200px;
     }
   }
